@@ -1,4 +1,5 @@
 <template>
+  <view>123</view>
   <view class="u-page">
     <view class="u-demo-block">
       <view class="u-demo-block__content">
