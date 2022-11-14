@@ -1,0 +1,142 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    { "path": "pages/index/index" },
+    {
+      "path": "pages/tabBar/purchase/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/purchase/components/add-order",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/purchase/components/add-warehousing",
+      "style": {}
+    },
+    // webview-test
+    {
+      "path": "pages/webview-test/index",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/purchase/components/list-order",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/purchase/components/add-return",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/sale/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/sale/components/add-order",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/sale/components/add-retail-list",
+      "style": { "navigationBarTitleText": "新增零售单" }
+    },
+    {
+      "path": "pages/tabBar/sale/components/cash-payment",
+      "style": {}
+    },
+    {
+      "path": "pages/tabBar/stock/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/stock/components/list-order",
+      "style": { "navigationBarTitleText": "库存盘点列表" }
+    },
+    {
+      "path": "pages/tabBar/stock/components/add-inventory",
+      "style": {
+        "navigationBarTitleText": "新增盘点单"
+      }
+    },
+    {
+      "path": "pages/tabBar/stock/components/list-order-detail",
+      "style": {
+        "navigationBarTitleText": "盘点单详情"
+      }
+    },
+    {
+      "path": "pages/tabBar/capital/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/tabBar/capital/components/add-receipt",
+      "style": { "navigationBarTitleText": "新增收款单" }
+    },
+    {
+      "path": "pages/tabBar/capital/components/add-payment",
+      "style": { "navigationBarTitleText": "新增付款单" }
+    },
+    //管理端
+
+    {
+      "path": "pages/management-side/index/index",
+      "style": {}
+    },
+    {
+      "path": "pages/management-side/information/index",
+      "style": {}
+    },
+    {
+      "path": "pages/management-side/information/components/edit",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小进销存",
+    "navigationBarBackgroundColor": "#8A61FF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#8A61FF",
+    "backgroundColor": "#FFFFFF",
+    "iconWidth": "20px",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/purchase/index",
+        "iconPath": "static/tab-1.png",
+        "selectedIconPath": "static/tab-1-select.png",
+        "text": "采购"
+      },
+      {
+        "pagePath": "pages/tabBar/sale/index",
+        "iconPath": "static/tab-2.png",
+        "selectedIconPath": "static/tab-2-select.png",
+        "text": "销售"
+      },
+      {
+        "pagePath": "pages/tabBar/stock/index",
+        "iconPath": "static/tab-3.png",
+        "selectedIconPath": "static/tab-3-select.png",
+        "text": "库存"
+      },
+      {
+        "pagePath": "pages/tabBar/capital/index",
+        "iconPath": "static/tab-4.png",
+        "selectedIconPath": "static/tab-4-select.png",
+        "text": "资金"
+      }
+    ]
+  }
+}
